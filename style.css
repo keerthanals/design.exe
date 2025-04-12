@@ -139,7 +139,7 @@
   
   /* Footer */
   footer {
-    background: #1e293b;
+    background: #4e725c;
     color: #e2e8f0;
     padding: 30px 20px;
     text-align: center;
@@ -230,4 +230,58 @@
       gap: 15px;
     }
   }
+  /* Newsletter Section */
+.newsletter {
+    padding: 6rem 2rem;
+    background: linear-gradient(rgba(95, 189, 134, 0.9), rgba(65, 104, 81, 0.9)),
+                url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+  }
   
+  .newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .newsletter h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter-form {
+    margin-top: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .newsletter input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+  }
+  
+  .newsletter button {
+    padding: 1rem 2rem;
+    background: var(--dark-gray);
+    color: var(--white);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: large;
+    
+  }
+  
+  .newsletter button:hover {
+    background: var(--text-color);
+  }
