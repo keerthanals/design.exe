@@ -96,36 +96,48 @@
     cursor: pointer;
   }
   
-  .projects {
+  /* Projects Section */
+/* Projects Section */
+.projects {
     padding: 40px 20px;
     background: #f0f0f0;
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: space-around;
     text-align: center;
-  }
-  
-  .project-card {
+}
+
+.projects h2 {
+    margin-bottom: 30px;
+}
+
+.project-cards {
+    display: flex;           /* The flex container should be this div */
+    flex-direction: row;     
+    justify-content: space-between; /* Distribute cards evenly */
+    gap: 20px;              
+}
+
+.project-card {
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 20px;
-    margin: 10px;
-    width: 300px;
-  }
-  
-  .project-card h3 {
-    margin-bottom: 10px;
-  }
-  
-  .project-card button {
-    background-color: #007BFF;
+    flex: 1;                /* Make each card take equal space */
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-card button {
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 10px 15px;
+    margin-top: 15px;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
 
   footer {
     background: #333;
