@@ -1,3 +1,31 @@
+// Navigation
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-menu a');
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navToggle.classList.remove('active');
+    navMenu.classList.remove('active');
+  });
+});
+
+// Smooth Scroll for Navigation Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollTop = 0;
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
 // Newsletter Form
 const newsletterForm = document.getElementById('newsletter-form');
 const formMessage = document.querySelector('.form-message');
@@ -21,3 +49,4 @@ if (newsletterForm) {
     }, 1500);
   });
 }
+
