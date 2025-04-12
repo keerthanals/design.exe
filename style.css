@@ -34,14 +34,13 @@
     align-items: center;
   }
   
-  .intro-text {
+  .intro-text,
+  .intro-image {
     flex: 1;
     padding: 20px;
   }
   
   .intro-image {
-    flex: 1;
-    padding: 20px;
     text-align: center;
   }
   
@@ -97,39 +96,38 @@
   }
   
   /* Projects Section */
-/* Projects Section */
-.projects {
+  .projects {
     padding: 40px 20px;
     background: #f0f0f0;
     text-align: center;
-}
-
-.projects h2 {
+  }
+  
+  .projects h2 {
     margin-bottom: 30px;
-}
-
-.project-cards {
-    display: flex;           /* The flex container should be this div */
-    flex-direction: row;     
-    justify-content: space-between; /* Distribute cards evenly */
-    gap: 20px;              
-}
-
-.project-card {
+  }
+  
+  .project-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .project-card {
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 20px;
-    flex: 1;                /* Make each card take equal space */
-}
-
-.project-card img {
+    flex: 1;
+  }
+  
+  .project-card img {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
-}
-
-.project-card button {
+  }
+  
+  .project-card button {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -137,50 +135,99 @@
     margin-top: 15px;
     border-radius: 4px;
     cursor: pointer;
-}
-
-footer {
-    background: #1e293b;     /* Darker, more sophisticated blue-gray */
-    color: #e2e8f0;          /* Softer white for better readability */
-    padding: 30px 20px;      /* Moderate padding */
+  }
+  
+  /* Footer */
+  footer {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 30px 20px;
     text-align: center;
-    border-top: 1px solid #475569; /* Subtle top border */
-}
-
-.footer-content {
+    border-top: 1px solid #475569;
+  }
+  
+  .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-
-.social-icons {
+  }
+  
+  .social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin: 20px 0;
-}
-
-.social-icons a {
+  }
+  
+  .social-icons a {
     color: #cbd5e1;
-    font-size: 1.5rem;      /* Larger icons */
+    font-size: 1.5rem;
     transition: all 0.2s ease;
-}
-
-.social-icons a:hover {
+  }
+  
+  .social-icons a:hover {
     color: #ffffff;
-    transform: translateY(-3px); /* Subtle hover animation */
-}
-
-.footer-bottom {
+    transform: translateY(-3px);
+  }
+  
+  .footer-bottom {
     width: 100%;
     margin-top: 20px;
     padding-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Very subtle separator */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
-    color: #94a3b8;          /* Lighter gray for copyright text */
-}
+    color: #94a3b8;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .intro,
+    .product-details {
+      flex-direction: column;
+    }
+  
+    .intro-text,
+    .intro-image,
+    .product-info,
+    .product-image {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .product-image {
+      margin: 20px 0;
+    }
+  
+    .project-cards {
+      flex-direction: column;
+    }
+  
+    .project-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cta-button,
+    .project-card button {
+      width: 100%;
+      padding: 12px;
+    }
+  
+    .footer-content {
+      padding: 10px;
+    }
+  
+    .social-icons {
+      gap: 15px;
+    }
+  }
   
