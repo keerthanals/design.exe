@@ -19,7 +19,7 @@
     padding: 1rem;
     position: fixed;
     width: 100%;
-    background: rgba(41, 39, 87, 0.95);
+    background: rgba(54, 93, 76, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
   }
